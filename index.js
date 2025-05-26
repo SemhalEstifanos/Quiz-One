@@ -1,9 +1,5 @@
 //1 Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
 
-const { array } = require("yargs");
-
-
-
 //Algorithm
 
 // Create class  called CustomerOrder with propertes such as order identifier,item,status and method calcukateToatl
