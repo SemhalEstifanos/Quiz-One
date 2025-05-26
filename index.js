@@ -5,7 +5,7 @@
 // Create class  called CustomerOrder with propertes such as order identifier,item,status and method calcukateToatl
 // For each item  multiply quantity by price and sum for all items
 // Return total amount
-// Create async funciton  named processPayment
+// Create async funciton  named processPayment inside a class
 // Retrun a promise that resolves after 2 seconds
 // Update status to paid
 // Print sucess message
@@ -30,8 +30,8 @@ class CustomerOrder {
     }
 }
 let order1 = new CustomerOrder("s20202", [{ name: "Books", quantity: 5, price: 1300 }, { name: "Pens", quantity: 10, price: 150 }])
-let total = order1.calculateTotal()
-console.log(`Your total price is ${total}$.`);
+
+console.log(`Your total price is ${order1.calculateTotal()}.`);
 order1.processPayment()
 
 
@@ -40,7 +40,7 @@ order1.processPayment()
 
 
 //Algorithm
-// Create a class called TeamMember object
+// Create a class called TeamMember
 // Has properties such as name,role and list of tasks
 // Create a function prototype called  completeTask that  takes taskTitle
 // Check if  the task exist in the given array
@@ -130,7 +130,6 @@ candidate.sendConfirmation().then(message => console.log(message));
 
 //4   Design a Course class with properties: title, instructor, and students (array of student objects with name and progress). Add a method updateProgress(studentName, value) that modifies the student’s progress. Create an async method generateCertificate(studentName) that returns a Promise resolving only if the progress is 100, otherwise reject with "Incomplete progress".
 
-
 //Algorithm
 // Create a class called  Course 
 // It has properties of title (string),instructor (string),students (array of objects: { name, progress })
@@ -184,6 +183,7 @@ course.generateCertificate("Semhal")
 course.generateCertificate("Bruk")
     .then(message => console.log(message))
     .catch(error => console.log(error));
+
 
 
 
