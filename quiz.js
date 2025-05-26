@@ -1,16 +1,18 @@
 //1 Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
 
+const { array } = require("yargs");
+
 
 
 //Algorithm
 
 // Create class  called CustomerOrder with propertes such as order identifier,item,status and method calcukateToatl
-// for each item  multiply quantity by price and sum for all items
-// return total amount
-// create async funciton  named processPayment
-// retrun a promise that resolves after 2 seconds
-// update status to paid
-// print sucess message
+// For each item  multiply quantity by price and sum for all items
+// Return total amount
+// Create async funciton  named processPayment
+// Retrun a promise that resolves after 2 seconds
+// Update status to paid
+// Print sucess message
 
 class CustomerOrder {
     constructor(orderId, items, status) {
@@ -41,6 +43,7 @@ order1.processPayment()
 // 2 Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
 
 
+//Algorithm
 // Create a class called TeamMember object
 // Has properties such as name,role and list of tasks
 // Create a function prototype called  completeTask that  takes taskTitle
@@ -92,6 +95,16 @@ member.checkProgress()
 // Build a Candidate class with properties: name, position, and interviews (array of objects with date, status). Add a method scheduleInterview(date) that pushes a new interview with status "pending". Then write an async function sendConfirmation() that returns a Promise that resolves after 1 second with a message "Interview confirmed with [name]", and log the message
 
 
+//Algorithm
+// Create a class called candidate
+// It has name and position property 
+// Initlise empty array
+// Create a function called scheduleInterview that takes in date
+// Push interview object to interview list with status and date
+// Then resolve Confirmation with 1 secod delay 
+
+
+
 class Candidate {
     constructor(name, position) {
         this.name = name;
@@ -122,6 +135,7 @@ candidate.sendConfirmation().then(message => console.log(message));
 //4   Design a Course class with properties: title, instructor, and students (array of student objects with name and progress). Add a method updateProgress(studentName, value) that modifies the student’s progress. Create an async method generateCertificate(studentName) that returns a Promise resolving only if the progress is 100, otherwise reject with "Incomplete progress".
 
 
+//Algorithm
 // Create a class called  Course 
 // It has properties of title (string),instructor (string),students (array of objects: { name, progress })
 // Create a function called updateProgress that takes studentName and value
